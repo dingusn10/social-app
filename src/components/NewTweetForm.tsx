@@ -43,7 +43,7 @@ function Form() {
         e.preventDefault();
     
         createTweet.mutate({content: inputValue})
-    };
+    }
     
     return (
         <form onSubmit={handleSubmit}  action="" className="flex flex-col gap-2 border-b px-4 py-2">

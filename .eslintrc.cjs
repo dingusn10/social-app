@@ -7,12 +7,15 @@ const config = {
     {
       extends: [
         "plugin:@typescript-eslint/recommended-requiring-type-checking",
+        "next",
+        "prettier"
       ],
       files: ["*.ts", "*.tsx"],
       parserOptions: {
         project: path.join(__dirname, "tsconfig.json"),
       },
     },
+    
   ],
   parser: "@typescript-eslint/parser",
   parserOptions: {
@@ -31,5 +34,6 @@ const config = {
     "@typescript-eslint/no-unused-vars": ["warn", { argsIgnorePattern: "^_" }],
   },
 };
+
 
 module.exports = config;
